@@ -145,7 +145,7 @@
 
             bindEvents: function () {
                 $(plugin.items).click(function (e) {
-                    if(!$("#lightbox").is(":visible") && ($(window).width() < opts.minSize || $(window).height() < opts.minSize)) {
+                    if(!$("#lightbox").is(":visible") && $(window).width() < opts.minSize) {
                         $(this).attr("target", "_blank");
                         return;
                     }
